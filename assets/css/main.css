@@ -1835,11 +1835,15 @@ input, select, textarea {
 
 	#header {
 		position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
 		z-index: 10000;
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(255, 255, 255);
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -1859,7 +1863,6 @@ input, select, textarea {
 			}
 
 		#header nav {
-			position: absolute;
 			right: 0.5em;
 			top: 0;
 			height: 3em;
@@ -1889,26 +1892,21 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+				display: none;
 			}
 
-				#header h1 {
-					text-align: center;
-					position: relative;
-					left: 0;
-					top: 0;
-					height: 2.5em;
-					line-height: 2.5em;
-				}
+                  #header h1 {
+                        text-align: center;
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        height: 2.5em;
+                        line-height: 2.5em;
+                  }
 
-					#header h1 a {
-						font-size: 1em;
-					}
-
-				#header nav {
-					display: none;
-				}
+                  #header nav {
+                        display: none;
+                  }
 
 		}
 
