@@ -1451,11 +1451,13 @@ input, select, textarea {
 			width: 50%;
 			position: relative;
 			opacity: 1.0;
+                  padding: 5px;
 		}
 
 			.y article .image {
 				margin: 0;
 				display: block;
+                        
 			}
 
 			.gallery article:nth-last-child(1n) {
